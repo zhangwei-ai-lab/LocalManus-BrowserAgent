@@ -1,0 +1,42 @@
+# 实测可用的依赖集合（Windows / Python 3.13.14）
+# 用法：
+#   python -m venv C:/Users/huangan/venvs/openmanus
+#   C:/Users/huangan/venvs/openmanus/Scripts/python.exe -m pip install -r requirements-local.txt \
+#       -i https://pypi.tuna.tsinghua.edu.cn/simple
+#
+# 说明：
+#   - 上游 requirements.txt 里的 crawl4ai / browsergym / datasets 属于可选依赖，
+#     未安装也能跑主流程（Crawl4aiTool 已改为懒加载），因此不列在这里。
+#   - pydantic 必须钉 2.10.x：mcp==1.5.0 依赖 pydantic._internal._typing_extra.eval_type_backport，
+#     2.11+ 已移除该符号，会直接 ImportError。
+#   - app.py 的 Web UI 需要 jinja2，上游 requirements.txt 漏了。
+
+pydantic==2.10.6
+pydantic_core==2.27.2
+openai~=1.66.3
+tenacity~=9.0.0
+pyyaml~=6.0.2
+loguru~=0.7.3
+numpy
+fastapi~=0.115.11
+uvicorn~=0.34.0
+jinja2
+tiktoken~=0.9.0
+html2text~=2024.2.26
+aiofiles~=24.1.0
+colorama~=0.4.6
+pillow
+playwright~=1.51.0
+requests~=2.32.3
+beautifulsoup4~=4.13.3
+duckduckgo_search~=7.5.3
+baidusearch~=1.0.3
+googlesearch-python~=1.3.0
+mcp==1.5.0
+httpx>=0.27.0
+tomli
+structlog
+browser-use==0.1.40
+boto3~=1.37.18
+docker~=7.1.0
+daytona-sdk
