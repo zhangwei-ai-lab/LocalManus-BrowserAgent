@@ -1,17 +1,17 @@
-**Features**
-<!-- Describe the features or bug fixes in this PR. For bug fixes, link to the issue. -->
+**改动内容**
+<!-- 这个 PR 做了什么。修 bug 请关联对应 issue 编号。 -->
 
-- Feature 1
-- Feature 2
+-
 
-**Feature Docs**
-<!-- Provide RFC, tutorial, or use case links for significant updates. Optional for minor changes. -->
+**为什么这样改**
+<!-- 说明根因或设计取舍。若是绕开某个模型/依赖的坑，写清现象和触发条件。 -->
 
-**Influence**
-<!-- Explain the impact of these changes for reviewer focus. -->
+**对现有流程的影响**
+<!-- 是否改变默认行为、配置项、提示词契约或工具返回格式。无影响可写「无」。 -->
 
-**Result**
-<!-- Include screenshots or logs of unit tests or running results. -->
+**验证方式**
+<!-- 贴 `pytest` 结果，或 `python main.py` / Web UI 的实际运行输出与 workspace 产物。 -->
+<!-- 涉及浏览器的改动请注明任务跑完后 Chromium 进程是否归零。 -->
 
-**Other**
-<!-- Additional notes about this PR. -->
+**其他**
+<!-- 补充说明。 -->

@@ -1,21 +1,26 @@
-name: "🤔 Request new features"
-description: Suggest ideas or features you’d like to see implemented in OpenManus.
+name: "🤔 提一个新想法"
+description: 你希望 LocalManus 支持什么能力，或者哪条路径还能再优化。
 labels: enhancement
 body:
   - type: textarea
     id: feature-description
     attributes:
-      label: Feature description
-      description: |
-        Provide a clear and concise description of the proposed feature
+      label: 想法描述
+      description: 一句话说清你想让它做到什么。
+      placeholder: 希望支持把浏览器截图交给本地 VL 模型，让 agent 能判断"页面长什么样"而不只是读文本。
     validations:
       required: true
   - type: textarea
+    id: motivation
+    attributes:
+      label: 为什么需要
+      description: 现在卡在哪一步？哪个场景下做不到？
+    validations:
+      required: false
+  - type: textarea
     id: your-feature
     attributes:
-      label: Your Feature
-      description: |
-        Explain your idea or implementation process, if any. Optionally, include a Pull Request URL.
-        Ensure accompanying docs/tests/examples are provided for review.
+      label: 你的思路
+      description: 有实现想法或半成品就写在这里，可以附 PR 链接。
     validations:
       required: false
